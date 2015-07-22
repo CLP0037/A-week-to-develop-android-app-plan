@@ -1,45 +1,34 @@
-# A-week-to-develop-android-app-plan
-一周开发Android App计划
+# A-week-to-develop-android-app-plan by using Qt
 
-##首批参与成员
--小巫
--墨香
--梦痕
--边城刀客
--徐cc
+一周开发Android App计划Qt on Android
 
-
-##要求
--每位认领者按照开源规范来做，代码规范和Android开发规范
--每位认领者必须拥有github账号，熟练使用git对代码进来管理
--每个人认领一个功能点或模块
--提出完善的解决方案并提供封装良好的库和demo
-
+修改自[一周开发Android App计划](https://github.com/fanatic-mobile-developer-for-android/A-week-to-develop-android-app-plan)。
 
 ###开发工具&&语言
 - Android Studio
+- Qt Creator
 - Java
-
+- qml
+- c++
 
 ##目的
--减少Android程序猿重复搬运代码劳动
--打造快速开发app开源库，一个星期开发一个app的愿望
--脱离苦逼加班，让程序猿提前下班跟女神去优衣库
-
+- 减少Android程序猿重复搬运代码劳动
+- 打造快速开发app开源库，一个星期开发一个app的愿望
+- 脱离苦逼加班，让程序猿提前下班跟女神去优衣库
 
 ##题目
-1. 功能引导页（认领者：小巫）
-2. 启动页（认领者：小巫）
-3. 登录注册（第三方登录）（认领者：小巫）
+1. 功能引导页
+2. 启动页
+3. 登录注册（第三方登录）
 4. 忘记密码/修改密码
-5. 网络请求（开源库）（认领者：边城刀客）
+5. 网络请求（开源库）
 6. 数据解析
 7. 数据存储（SQL/SP/File）
 8. 图片异步加载（开源库）
 9. 消息推送（第三方）
 10. 清除缓存
 11. 账号绑定（同3）
-12. 点赞功能（认领者：梦痕）
+12. 点赞功能
 13. 评论功能
 12. 收藏功能
 12. 检查更新（第三方）
@@ -99,12 +88,6 @@
 56. 地区三级联动
 57. 自定义日历
 
-更多。。。。
+TODO MORE...
 
 以上都是一些常见的功能点和需求，如果你在开发当中遇到过更多的需求点，麻烦给我留言，我会添加到开源列表当中。如果你有时间也可以加入我们，把你认为可以帮助到大家的东西开源出来或者提出有效的解决方案，我会把你的成果整理出来跟大家分享。
-
-##关注我的github
-[https://github.com/devilWwj](https://github.com/devilWwj)
-
-##移动开发狂热者github组织
-[https://github.com/fanatic-mobile-developer-for-android/A-week-to-develop-android-app-plan](https://github.com/fanatic-mobile-developer-for-android/A-week-to-develop-android-app-plan)
