@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>qml/SplashScreen/main.qml</file>
+        <file>qml/SplashScreen/MainForm.ui.qml</file>
+        <file>qml/SplashScreen/MainWindow.qml</file>
+        <file>qml/SplashScreen/Qt.gif</file>
+        <file>qml/SplashScreen/SplashScreen.qml</file>
+    </qresource>
+</RCC>
