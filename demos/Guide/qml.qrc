@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>qml/Guide/main.qml</file>
+        <file>qml/Guide/Guide.qml</file>
+        <file>qml/Guide/MainWindow.qml</file>
+    </qresource>
+</RCC>
