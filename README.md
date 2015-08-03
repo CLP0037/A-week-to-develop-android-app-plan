@@ -4,21 +4,24 @@
 
 修改自[一周开发Android App计划](https://github.com/fanatic-mobile-developer-for-android/A-week-to-develop-android-app-plan)。
 
-###开发工具&&语言
+### 开发工具&&语言
+
 - Android Studio
 - Qt Creator
 - Java
-- qml
-- c++
+- QML
+- C++
 
-##目的
+## 目的
+
 - 减少Android程序猿重复搬运代码劳动
 - 打造快速开发app开源库，一个星期开发一个app的愿望
 - 脱离苦逼加班，让程序猿提前下班跟女神去优衣库
 
-##题目
-1. 功能引导页
-2. 启动页
+## 题目
+
+1. [启动页](demos\SplashScreen\doc\readme.md)
+2. [引导页](demos\Guide\doc\readme.md)
 3. 登录注册（第三方登录）
 4. 忘记密码/修改密码
 5. 网络请求（开源库）
