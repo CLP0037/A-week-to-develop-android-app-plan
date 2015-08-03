@@ -1,4 +1,4 @@
-# SplashScreen
+# 启动页
 
 **SplashScreen** 类似于 **Photoshop** 完全启动前，先展示的小窗口。
 
@@ -39,7 +39,7 @@
 
 注意对应，在 `AndroidManifest.xml` 对应的是 `@drawable/splash` 那么，在文件系统中对应的是 `android/res/drawable-*/splash.png`。
 
-这种方式的优点是简单，但是却不能动态更新 **SplashScreen**，接下来的第二种方法就复制了点，需要使用 `Java`。
+这种方式的优点是简单，但是却不能动态更新 **SplashScreen**。
 
 ---
 
