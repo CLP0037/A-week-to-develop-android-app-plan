@@ -1,0 +1,10 @@
+<RCC>
+    <qresource prefix="/">
+        <file>qml/DataStorage/main.qml</file>
+        <file>qml/DataStorage/Component/Page.qml</file>
+        <file>qml/DataStorage/WellCome/candle.png</file>
+        <file>qml/DataStorage/WellCome/Turbulence.qml</file>
+        <file>qml/DataStorage/WellCome/WellCome.qml</file>
+        <file>qml/DataStorage/MainWindow.qml</file>
+    </qresource>
+</RCC>
