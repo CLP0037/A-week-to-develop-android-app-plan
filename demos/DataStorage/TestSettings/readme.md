@@ -118,8 +118,6 @@ ApplicationWindow {
 }
 ```
 
-从上述代码可以看出，一个设置在一个应用中是全局唯一的，使用前缀以及名称进行区别。
-
 `QSettings::group` 对应到 `Settings::category`，`QSettings::setValue` 中的 `name` 参数对应到 `Settings` 中的属性。从上述代码可以看出，一个设置在一个应用中是全局唯一的，使用前缀以及名称进行区别。
 
 `QSettings::group` 对应到 `Settings::category`，`QSettings::setValue` 中的 `name` 参数对应到 `Settings` 中的属性。

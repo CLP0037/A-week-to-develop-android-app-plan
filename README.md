@@ -31,7 +31,7 @@
 
     - [设置保存](demos/DataStorage/TestSettings/readme.md)
 
-    - 数据库操作。
+    - [数据库操作](demos/DataStorage/LocalStorage/readme.md)
 
     - 类似于 `ContentProvider` 的数据模型。
 
