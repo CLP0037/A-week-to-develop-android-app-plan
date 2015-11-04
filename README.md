@@ -27,12 +27,17 @@
 
 3. [PageStackWindow框架](https://github.com/GDPURJYFS/Sparrow)
 
-4. [设置]()
-    - 保存和加载设置
-    - 关于我们
-    - 检查更新
-    - 意见反馈
-    - 全局更新
+4. [数据存储](demos/DataStorage/readme.md)
+
+    - [设置保存](demos/DataStorage/TestSettings/readme.md)
+
+    - 数据库操作。
+
+    - 类似于 `ContentProvider` 的数据模型。
+
+    - 文件存储。
+
+    - 网络。
 
 5. [数据存储]()
     - 用户业务数据的网络存储
