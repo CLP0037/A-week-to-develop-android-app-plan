@@ -16,14 +16,15 @@ ApplicationWindow {
             title: qsTr("&File")
             MenuItem {
                 text: qsTr("&Open")
-                onTriggered: messageDialog.show(qsTr("Open action triggered"));
+                onTriggered: messageDialog.show(qsTr("Open action triggered"))
             }
             MenuItem {
                 text: qsTr("E&xit")
-                onTriggered: Qt.quit();
+                onTriggered: Qt.quit()
             }
         }
     }
+
     Item {
         id: root
         anchors.fill: parent
@@ -32,17 +33,16 @@ ApplicationWindow {
             color: "#712727"
             gradient: Gradient {
                 GradientStop {
-                    position: 0.13;
-                    color: "#712727";
+                    position: 0.13
+                    color: "#712727"
                 }
                 GradientStop {
-                    position: 1.00;
-                    color: "#ffffff";
+                    position: 1.00
+                    color: "#ffffff"
                 }
             }
             anchors.fill: parent
             anchors.bottomMargin: bottomBar.height
-
         }
 
         Rectangle {
@@ -50,17 +50,18 @@ ApplicationWindow {
             width: parent.width
             height: 60
             anchors.bottom: parent.bottom
+
             RowLayout {
                 anchors.fill: parent
 
                 Button {
                     text: "save pic"
-                    onClicked : {
-                        var success = root.grabToImage(function(result){
-                            result.saveToFile("C:/root.png");
-                            console.log("pic file path: " ,result.url);
-                        });
-                        console.log("save pic to mem url :", success);
+                    onClicked: {
+                        var success = root.grabToImage(function (result) {
+                            result.saveToFile("C:/root.png")
+                            console.log("pic file path: ", result.url)
+                        })
+                        console.log("save pic to mem url :", success)
                     }
                 }
 
@@ -71,8 +72,9 @@ ApplicationWindow {
 
                 Button {
                     text: "button1"
-                    onClicked : {
-                        saveTextToFile(input.text, Qt.resolvedUrl("C:/qml_save_file.txt"));
+                    onClicked: {
+                        saveTextToFile(input.text,
+                                       Qt.resolvedUrl("C:/qml_save_file.txt"))
                     }
                 }
             }
@@ -81,23 +83,21 @@ ApplicationWindow {
 
     // can't do delete, put, post operation for local file path.
     function saveTextToFile(textContent, filename) {
-        var xhr = new XMLHttpRequest();
+        var xhr = new XMLHttpRequest()
         xhr.onreadystatechange = function () {
-            if(xhr.readyState == xhr.DONE) {
-                console.log("DONE");
+            if (xhr.readyState == xhr.DONE) {
+                console.log("DONE")
                 console.log(xhr.responseText)
-            } else if(xhr.readyState == xhr.HEADERS_RECEIVED) {
-                console.log(xhr.getAllResponseHeaders());
+            } else if (xhr.readyState == xhr.HEADERS_RECEIVED) {
+                console.log(xhr.getAllResponseHeaders())
             } else {
-                console.log(xhr.readyState);
+                console.log(xhr.readyState)
             }
         }
         // xhr.open("PUT", filename, true);
-        xhr.open("POST", filename, true);
-        xhr.setRequestHeader("Content-Type", "text/html; charset=utf-8");
-        xhr.send(textContent);
+        xhr.open("POST", filename, true)
+        xhr.setRequestHeader("Content-Type", "text/html; charset=utf-8")
+        xhr.send(textContent)
         console.log(filename, textContent)
     }
-
-
 }

@@ -126,4 +126,82 @@ xhr.send(save_data);
 
 请查阅 `QIODevice` 及其派生子类。
 
+详细内容查看 [Qt For Android 文件存储](FileOperation\readme.md)。
+
 ## 网络
+
+### QML XMLHttpRequest
+
+[W3C XMLHttpRequest 标准](http://www.w3.org/TR/XMLHttpRequest/)。
+
+`XMLHttpRequest` 的 W3C 接口描述如下：
+
+```
+[NoInterfaceObject]
+interface XMLHttpRequestEventTarget : EventTarget {
+    // event handlers
+    attribute EventHandler onloadstart;
+    attribute EventHandler onprogress;
+    attribute EventHandler onabort;
+    attribute EventHandler onerror;
+    attribute EventHandler onload;
+    attribute EventHandler ontimeout;
+    attribute EventHandler onloadend;
+};
+
+interface XMLHttpRequestUpload : XMLHttpRequestEventTarget {
+
+};
+
+enum XMLHttpRequestResponseType {
+    "",
+    "arraybuffer",
+    "blob",
+    "document",
+    "json",
+    "text"
+};
+
+[Constructor]
+interface XMLHttpRequest : XMLHttpRequestEventTarget {
+    // event handler
+    attribute EventHandler onreadystatechange;
+
+    // states
+    const unsigned short UNSENT = 0;
+    const unsigned short OPENED = 1;
+    const unsigned short HEADERS_RECEIVED = 2;
+    const unsigned short LOADING = 3;
+    const unsigned short DONE = 4;
+    readonly attribute unsigned short readyState;
+
+    // request
+    void open(ByteString method, [EnsureUTF16] DOMString url);
+    void open(ByteString method, 
+             [EnsureUTF16] DOMString url, 
+             boolean async, 
+             optional [EnsureUTF16] DOMString? username = null, 
+             optional [EnsureUTF16] DOMString? password = null);
+    void setRequestHeader(ByteString header, ByteString value);
+    attribute unsigned long timeout;
+    attribute boolean withCredentials;
+    readonly attribute XMLHttpRequestUpload upload;
+    void send(optional (ArrayBufferView or Blob or Document or [EnsureUTF16] DOMString or FormData)? data = null);
+    void abort();
+
+    // response
+    readonly attribute unsigned short status;
+    readonly attribute ByteString statusText;
+    ByteString? getResponseHeader(ByteString header);
+    ByteString getAllResponseHeaders();
+    void overrideMimeType(DOMString mime);
+    attribute XMLHttpRequestResponseType responseType;
+    readonly attribute any response;
+    readonly attribute DOMString responseText;
+    readonly attribute Document? responseXML;
+};
+```
+
+在 `QML` 中只实现了 XMLHttpRequest Level 1 标准。
+
+
