@@ -83,6 +83,7 @@
 ```
 // reslut is ItemGrabResult type
 source.grabToImage(function(result) {
+                       // 不能是 file:// 开头
                        result.saveToFile("something.png");
                    },Qt.size(50, 50));
 ```
@@ -92,6 +93,8 @@ source.grabToImage(function(result) {
 成功返回 `true`。
 
 #### 文本文件
+
+以下方法在 Qt 5 中无效。
 
 ```
 var xhr = new XMLHttpRequest;
@@ -110,6 +113,8 @@ xhr.send(save_data);
 将获取到的 `save_data` 保存到本地路径。
 
 但是 `XMLHttpRequest` 的 `DELETE` 方法是不能删除本地一个文件的。
+
+上诉方法无法在 Qt 5.5.0 通过。Qt 官方应该认为其是个漏洞，不允许文件的创建和写操作。
 
 #### 二进制文件
 

@@ -73,7 +73,7 @@ sync()
 
 继承 `QAbstractItemModel` 或者 `QAbstractListModel`，重写一些虚函数，然后注册到 `QML` 的运行环境中，就可以获取到强大的支持。例如提供持久化数据，排序，统计等一些与业务相关的接口。
 
-这个子类重载是三个虚函数：
+继承 `QAbstractListModel` 并重写如下三个虚函数。
 
 ```
 int rowCount(const QModelIndex &parent) const;
