@@ -94,27 +94,31 @@ source.grabToImage(function(result) {
 
 #### 文本文件
 
-以下方法在 Qt 5 中无效。
-
 ```
-var xhr = new XMLHttpRequest;
-xhr.onreadystatechange = function() {
-                    if (doc.readyState == XMLHttpRequest.HEADERS_RECEIVED) {
-                        console.log(doc.getAllResponseHeaders());
-                    } else if (doc.readyState == XMLHttpRequest.DONE) {
-                        console.log(doc.getAllResponseHeaders());
-                    }
-                };
-xhr.open("PUT", "qml_data.txt");
-var save_data = "some data from qml.";
-xhr.send(save_data);
+
+    function saveText(filename, contentText) {
+        var xhr = new XMLHttpRequest;
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState == XMLHttpRequest.HEADERS_RECEIVED) {
+                console.log(xhr.getAllResponseHeaders());
+            } else if (xhr.readyState == XMLHttpRequest.DONE) {
+                console.log(xhr.getAllResponseHeaders());
+            }
+        };
+        xhr.open("PUT", filename);
+        xhr.send(contentText.toString());
+        xhr.open("PUT", filename);
+        xhr.send(contentText.toString());
+    }
 ```
 
 将获取到的 `save_data` 保存到本地路径。
 
 但是 `XMLHttpRequest` 的 `DELETE` 方法是不能删除本地一个文件的。
 
-上诉方法无法在 Qt 5.5.0 通过。Qt 官方应该认为其是个漏洞，不允许文件的创建和写操作。
+~~上诉方法无法在 Qt 5.5.0 通过。Qt 官方应该认为其是个漏洞，不允许文件的创建和写操作。~~
+
+修复了这个问题，`xhr.open` 和 `xhr.send` 两次，就可以向本地路径新建一个文件并写入数据了。
 
 #### 二进制文件
 
