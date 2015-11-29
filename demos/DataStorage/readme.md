@@ -95,7 +95,6 @@ source.grabToImage(function(result) {
 #### 文本文件
 
 ```
-
     function saveText(filename, contentText) {
         var xhr = new XMLHttpRequest;
         xhr.onreadystatechange = function() {
@@ -119,6 +118,8 @@ source.grabToImage(function(result) {
 ~~上诉方法无法在 Qt 5.5.0 通过。Qt 官方应该认为其是个漏洞，不允许文件的创建和写操作。~~
 
 修复了这个问题，`xhr.open` 和 `xhr.send` 两次，就可以向本地路径新建一个文件并写入数据了。
+
+> 注意，本人只在windows 7 下测试通过，其他平台还未测试，此外，请不要使用此漏洞。（确实是个漏洞吧）。
 
 #### 二进制文件
 
