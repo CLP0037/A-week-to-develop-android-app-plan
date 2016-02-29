@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>qml/NetworkImageCache/main.qml</file>
+        <file>qml/NetworkImageCache/BiliBiliIndexModel.qml</file>
+    </qresource>
+</RCC>
