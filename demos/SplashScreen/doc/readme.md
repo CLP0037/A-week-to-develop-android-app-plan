@@ -16,11 +16,14 @@
 
 ## 在Qt中为安卓应用设置 SplashScreen
 
-实现的方式其实有三种：
+实现的方式其实有如下几种：
 
 1. 在安卓的 `AndroidManifest.xml` 文件中指定
+
 2. 在 `Java` 代码中实现
+
 3. 在 `C++` 代码中实现
+
 4. 在 `QML` 中实现
 
 其实最后两种，并不能算得上是真正的 **SplashScreen**。因为在进入这个 **SplashScreen** 之前，应用仍然会黑屏。
@@ -41,10 +44,10 @@
 
 这种方式的优点是简单，但是却不能动态更新 **SplashScreen**。
 
+> 上述方法，在启动 SplashScreen 仍然会有黑屏，是纯黑的那种黑屏。打开其他软件，例如知乎，是白色的，哔哩哔哩，也是白色的。
+
 ---
 
 > [android程序启动画面之Splash总结](http://www.oschina.net/question/54100_34020)
 
 > [Android Splash界面支持用户点击 直接进入主界面](http://blog.csdn.net/lmj623565791/article/details/23613403)
-
-> [生成一个 Qt on Android 项目]()

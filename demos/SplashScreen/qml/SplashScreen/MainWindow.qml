@@ -9,14 +9,6 @@ ApplicationWindow {
     height: 480
     //visible: true
 
-    property var splashScreen: SplashScreen {
-        id: splash
-    }
-
-    Component.onCompleted: {
-
-    }
-
     menuBar: MenuBar {
         Menu {
             title: qsTr("&File")
