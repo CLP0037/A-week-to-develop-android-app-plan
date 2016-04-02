@@ -51,3 +51,9 @@
 > [android程序启动画面之Splash总结](http://www.oschina.net/question/54100_34020)
 
 > [Android Splash界面支持用户点击 直接进入主界面](http://blog.csdn.net/lmj623565791/article/details/23613403)
+
+> [消除Android程序启动时的黑屏界面](http://www.tinyant.cn/?p=362)
+
+> [为Android应用程序添加启动页](http://www.tinyant.cn/?p=365)
+
+> [Complete Guide to Making a Splash Screen for your QML Android Application](https://medium.com/@benlaud/complete-guide-to-make-a-splash-screen-for-your-qml-android-application-567ca3bc70af#.dn5tq0cxo)
