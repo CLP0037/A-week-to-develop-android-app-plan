@@ -28,6 +28,7 @@
     ```
 
     将上诉的 Java 代码转成 C++ 代码。参考 [Qt and Android Gallery - MediaStore using QAndroidJniObject](http://stackoverflow.com/questions/34163437/qt-and-android-gallery-mediastore-using-qandroidjniobject)。
+
 ---
 
 参考资料：
