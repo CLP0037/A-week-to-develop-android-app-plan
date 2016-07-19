@@ -62,11 +62,11 @@
     - [csdn-寒山居士-图片圆形裁剪](http://blog.csdn.net/esonpo/article/details/37762239)
 
 9. 多媒体处理
-    - 图片选择库
+    - [图片选择库](demos/CallNativeCamera/readme.md)
     - 图片上传下载
     - 图片处理
     - 图片浏览（左右切换，可放大）
-    - 拍照功能
+    - [拍照功能](demos/CallNativeCamera/readme.md)
 
 10. 文件处理
     - 文件过滤
@@ -101,3 +101,30 @@
 TODO MORE...
 
 以上对一些常见的功能点和需求进行了分类，如果你在开发当中遇到过更多的需求点，麻烦给我留言，我会添加到开源列表当中。如果你有时间也可以加入我们，把你认为可以帮助到大家的东西开源出来或者提出有效的解决方案，我会把你的成果整理出来跟大家分享。
+
+---
+
+其他项目：
+
+[zkelong/QtForAndroid](https://github.com/zkelong/QtForAndroid)
+
+[toby20130333/qt-websocket-protobuf](https://github.com/toby20130333/qt-websocket-protobuf)
+
+> 基于nodejs后端框架与Qt前端框架使用protobuf
+
+[antonypro/QtKeyboardRect](https://github.com/antonypro/QtKeyboardRect)
+
+> Qt 获取安卓键盘高度示例
+
+[Code snippets for UI programming blog http://www.joona.net](https://github.com/jpetrell/codesnippets-joona)
+
+> 一些 QML 界面设计的代码片段
+
+[rschiang/material](https://github.com/rschiang/material)
+
+> QtQuick 的 material 样式控件，不过 Qt 5.7.0 的 Controls 2.0 已经有 material 样式了，并且还提供更贴切移动开发的控件~
+
+[lvip/TwaddleMSG-desctop-](https://github.com/lvip/TwaddleMSG-desctop-)
+
+> 看起来是个桌面软件
+
