@@ -19,7 +19,6 @@ public:
     explicit CallNativeCamera(QObject *parent = 0);
     ~CallNativeCamera();
 
-    /***/
     Q_INVOKABLE void capture();
 
 signals:
