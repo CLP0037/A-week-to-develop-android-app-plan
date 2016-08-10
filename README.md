@@ -128,3 +128,14 @@ TODO MORE...
 
 > 看起来是个桌面软件
 
+[Intents with Qt for Android, part 1](http://blog.qt.io/blog/2016/06/30/intents-with-qt-for-android-part-1/)
+
+[eskilblomfeldt/recipeexample](https://github.com/eskilblomfeldt/recipeexample)
+
+> 在 Qt for Android 上使用 Intents
+
+[Qt on Android: How to restart your application](https://www.kdab.com/qt-on-android-how-to-restart-your-application/)
+
+[LaurentGomila/qt-android-cmake](https://github.com/LaurentGomila/qt-android-cmake)
+
+> A simple CMake utility for building and deploying Qt based applications on Android without QtCreator
