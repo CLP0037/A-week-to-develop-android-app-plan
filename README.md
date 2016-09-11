@@ -139,3 +139,7 @@ TODO MORE...
 [LaurentGomila/qt-android-cmake](https://github.com/LaurentGomila/qt-android-cmake)
 
 > A simple CMake utility for building and deploying Qt based applications on Android without QtCreator
+
+[paulondc/quicknative](https://github.com/paulondc/quicknative)
+
+封装了 **Android** 和 **IOS** 的原生对话框。
